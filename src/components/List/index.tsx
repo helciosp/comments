@@ -20,7 +20,7 @@ const List: React.FunctionComponent<{}> = () => {
     listsCollection.selectAllDocs().then(() => {
       setLists(listsCollection.docsData());
       dispatch({ type: 'DONE' });
-    });
+    }); // eslint-disable-next-line
   }, []);
   
   return (

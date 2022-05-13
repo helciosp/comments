@@ -1,6 +1,6 @@
 
 
-import { Components, ComponentsProps, Paper, PaperProps } from '@mui/material';
+import { Paper, PaperProps } from '@mui/material';
 import React from 'react';
 
 const UIPaper: React.FC<PaperProps> = ({ children, ...props }) => {

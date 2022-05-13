@@ -67,7 +67,7 @@ export default function CommentsPage() {
         console.error(err);
         dispatchNoiceBoard({ type: 'ERROR', payload: { children: <a href="/">Página de listas</a>, message: `${err.message} Na maioria dos casos é possível corrigir isso voltando à página para selecionar a lista.` } })
       }
-    }
+    } // eslint-disable-next-line
   }, [loadId, clientId, dispatchLoader, dispatchNoiceBoard]);
 
   const handleTransition = (option: 'less' | 'more') => {
